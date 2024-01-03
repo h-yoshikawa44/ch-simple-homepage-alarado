@@ -1,4 +1,6 @@
 import { defineConfig } from 'vite';
+import { browserslistToTargets } from 'lightningcss';
+import browserslist from 'browserslist';
 
 export default defineConfig({
   base:
@@ -7,5 +9,14 @@ export default defineConfig({
       : './',
   server: {
     open: true,
+  },
+  css: {
+    transformer: 'lightningcss',
+    lightningcss: {
+      targets: browserslistToTargets(browserslist('>= 0.25%')),
+    },
+  },
+  build: {
+    cssMinify: 'lightningcss',
   },
 });
