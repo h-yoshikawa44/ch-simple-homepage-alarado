@@ -20,8 +20,8 @@
     />
   </head>
   <body>
-    <header>
-      <h1>
+    <header class="header">
+      <h1 class="header__logo-wrapper">
         <img
           src="./images/alarado-icon-homepage.svg"
           alt="Alarado Logo"
@@ -30,12 +30,19 @@
           decoding="async"
         />
       </h1>
-      <button type="button">Menu</button>
+      <button
+        class="header__menu-button"
+        type="button"
+        aria-label="メニューを開く"
+      >
+        <span class="header__menu-button-bar"> </span>
+      </button>
     </header>
-    <main>
-      <div>
-        <p>
+    <main class="main">
+      <div class="main-contents-wrapper">
+        <p class="hero__image-wrapper">
           <img
+            class="hero__image"
             src="./images/hero-image-simple-homepage.png"
             alt=""
             width="1460"
@@ -43,22 +50,34 @@
             decoding="async"
           />
         </p>
-        <div>
-          <p>😎 Simple way to communicate</p>
-          <em>Actions for Accessibility in Design</em>
-          <p>
-            The fastest way to build and deploy websites with resusable
-            components.
-          </p>
+        <div class="hero-contents">
+          <div class="hero-contents-container">
+            <div>
+              <p class="hero-contents__intro">😎 Simple way to communicate</p>
+              <em class="hero-contents__primary-text"
+                >Actions for Accessibility <br />in Design</em
+              >
+              <p class="hero-contents__secondary-text">
+                The fastest way to build and deploy websites with resusable
+                components.
+              </p>
+            </div>
+            <div class="hero-contents__action">
+              <button class="hero-contents__action-button" type="button">
+                GET STARTED
+              </button>
+              <a class="hero-contents__action-link" href="#">Get live demo</a>
+            </div>
+            <ul class="hero-contents__features-list">
+              <li class="hero-contents__features-list-item">
+                No credit card required
+              </li>
+              <li class="hero-contents__features-list-item">
+                No software to install
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <button type="button">GET STARTED</button>
-          <a href="#">Get live demo</a>
-        </div>
-        <ul>
-          <li>No credit card required</li>
-          <li>No software to install</li>
-        </ul>
       </div>
     </main>
     <script type="module" src="/js/main.js"></script>
