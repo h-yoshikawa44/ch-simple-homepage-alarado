@@ -244,6 +244,13 @@ input[type='checkbox']:checked.theme-switch__toggle
   flex-direction: column;
 }
 
+@media (width > 1024px) {
+  .main {
+    margin-top: 64px;
+    margin-bottom: 140px;
+  }
+}
+
 .hero__image-wrapper {
   padding: 0 2%;
   margin: 0 auto;
@@ -252,6 +259,12 @@ input[type='checkbox']:checked.theme-switch__toggle
 .hero__image {
   width: 100%;
   height: auto;
+}
+
+@media (width > 1024px) {
+  .hero__image-wrapper {
+    max-width: 576px;
+  }
 }
 
 .hero-contents {
@@ -341,4 +354,14 @@ input[type='checkbox']:checked.theme-switch__toggle
   vertical-align: middle;
   content: '';
   background-image: url('../images/Done_ring_round_fill.svg');
+}
+
+@media (width > 1024px) {
+  .hero-contents {
+    margin-top: 112px;
+  }
+
+  .hero-contents-container {
+    max-width: 792px;
+  }
 }
