@@ -26,6 +26,7 @@ p,
 figure,
 blockquote,
 hr,
+ul,
 dl,
 dd {
   margin-block: 0 0;

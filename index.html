@@ -10,11 +10,98 @@
       content="devChallenges.io - Simple Homepage - Alarado | by h-yoshikawa44"
     />
     <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app">
-      <h1>Vite App</h1>
-    </div>
+    <header class="container header">
+      <h1 class="header__logo-wrapper">
+        <img
+          src="./images/alarado-icon-homepage.svg"
+          alt="Alarado Logo"
+          width="141"
+          height="24"
+          decoding="async"
+        />
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item header__nav-list-item--selected">
+            <a href="#">About us</a>
+          </li>
+          <li class="header__nav-list-item"><a href="#">Product</a></li>
+          <li class="header__nav-list-item"><a href="#">Resource</a></li>
+          <li class="header__nav-list-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <label class="theme-switch__base" for="theme-switch">
+        <input
+          class="theme-switch__toggle"
+          id="theme-switch"
+          type="checkbox"
+          name="theme"
+          aria-label="theme switch"
+        />
+        <span class="theme-switch__toggle-selected"></span>
+        <span class="theme-switch__icon-base theme-switch__dark-icon"></span>
+        <span class="theme-switch__icon-base theme-switch__light-icon"></span>
+      </label>
+      <button
+        class="header__menu-button"
+        type="button"
+        aria-label="メニューを開く"
+      >
+        <span class="header__menu-button-bar"> </span>
+      </button>
+    </header>
+    <main class="main">
+      <div class="container main-contents-wrapper">
+        <p class="hero__image-wrapper">
+          <img
+            class="hero__image"
+            src="./images/hero-image-simple-homepage.png"
+            alt=""
+            width="1460"
+            height="1320"
+            decoding="async"
+          />
+        </p>
+        <div class="hero-contents">
+          <div class="hero-contents-container">
+            <div>
+              <p class="hero-contents__intro">😎 Simple way to communicate</p>
+              <em class="hero-contents__primary-text"
+                >Actions for Accessibility <br />in Design</em
+              >
+              <p class="hero-contents__secondary-text">
+                The fastest way to build and deploy websites with
+                <br />resusable components.
+              </p>
+            </div>
+            <div class="hero-contents__action">
+              <button class="hero-contents__action-button" type="button">
+                GET STARTED
+              </button>
+              <a class="hero-contents__action-link" href="#">Get live demo</a>
+            </div>
+            <ul class="hero-contents__features-list">
+              <li class="hero-contents__features-list-item">
+                No credit card required
+              </li>
+              <li class="hero-contents__features-list-item">
+                No software to install
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>
