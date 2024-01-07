@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <header class="container header">
+    <header id="header" class="container header">
       <h1 class="header__logo-wrapper">
         <img
           src="./images/alarado-icon-homepage.svg"
@@ -30,7 +30,7 @@
           decoding="async"
         />
       </h1>
-      <nav class="header__nav">
+      <nav id="header-nav" class="header__nav" aria-label="header-nav">
         <ul class="header__nav-list">
           <li class="header__nav-list-item header__nav-list-item--selected">
             <a href="#">About us</a>
@@ -40,10 +40,13 @@
           <li class="header__nav-list-item"><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <label class="theme-switch__base" for="theme-switch">
+      <label
+        class="theme-switch__base header__theme-switch"
+        for="header-theme-switch"
+      >
         <input
           class="theme-switch__toggle"
-          id="theme-switch"
+          id="header-theme-switch"
           type="checkbox"
           name="theme"
           aria-label="theme switch"
@@ -53,14 +56,15 @@
         <span class="theme-switch__icon-base theme-switch__light-icon"></span>
       </label>
       <button
+        id="open-menu-button"
         class="header__menu-button"
         type="button"
-        aria-label="メニューを開く"
+        aria-label="Open Menu"
       >
         <span class="header__menu-button-bar"> </span>
       </button>
     </header>
-    <main class="main">
+    <main id="main" class="main">
       <div class="container main-contents-wrapper">
         <p class="hero__image-wrapper">
           <img
@@ -102,6 +106,60 @@
         </div>
       </div>
     </main>
+    <div id="menu" class="menu">
+      <div class="menu-backdrop"></div>
+      <div class="menu-contents">
+        <div class="menu-header">
+          <button
+            id="close-menu-button"
+            class="menu-header__close-button"
+            type="button"
+            aria-label="Close Menu"
+          >
+            <span class="menu-header__close-button-bar"></span>
+          </button>
+        </div>
+        <nav id="menu-nav" class="menu-contents__nav" aria-label="menu-nav">
+          <ul class="menu-contents__nav-list">
+            <li
+              class="menu-contents__nav-list-item menu-contents__nav-list-item--selected"
+            >
+              <a href="#">About us</a>
+            </li>
+            <li class="menu-contents__nav-list-item">
+              <a href="#">Product</a>
+            </li>
+            <li class="menu-contents__nav-list-item">
+              <a href="#">Resource</a>
+            </li>
+            <li class="menu-contents__nav-list-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-footer">
+          <label
+            class="theme-switch__base menu-footer__theme-switch"
+            for="menu-theme-switch"
+          >
+            <input
+              class="theme-switch__toggle"
+              id="menu-theme-switch"
+              type="checkbox"
+              name="theme"
+              aria-label="theme switch"
+            />
+            <span class="theme-switch__toggle-selected"></span>
+            <span
+              class="theme-switch__icon-base theme-switch__dark-icon"
+            ></span>
+            <span
+              class="theme-switch__icon-base theme-switch__light-icon"
+            ></span>
+          </label>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>
