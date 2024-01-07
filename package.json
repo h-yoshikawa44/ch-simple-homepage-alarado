@@ -17,6 +17,9 @@
     "fix:prettier": "npm run check:prettier -- --write",
     "prepare": "simple-git-hooks || echo 'Can not set git hooks'"
   },
+  "dependencies": {
+    "wicg-inert": "^3.1.2"
+  },
   "devDependencies": {
     "browserslist": "^4.22.2",
     "lightningcss": "^1.22.1",
