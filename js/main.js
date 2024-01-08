@@ -1,4 +1,4 @@
-/* global window document HTMLInputElement */
+/* global window document HTMLInputElement HTMLObjectElement */
 
 import '../css/reset.css';
 import '../css/style.css';
@@ -13,6 +13,7 @@ const closeMenuButton = document.getElementById('close-menu-button');
 
 const headerThemeSwitch = document.getElementById('header-theme-switch');
 const menuThemeSwitch = document.getElementById('menu-theme-switch');
+const logoIcon = document.getElementById('logo-icon');
 
 /**
  * メニューを開く
@@ -62,13 +63,29 @@ const switchTheme = () => {
     )
   )
     return;
+  if (!(logoIcon instanceof HTMLObjectElement)) return;
 
   if (isCurrentLight) {
+    // light -> dark
     headerThemeSwitch.checked = false;
     menuThemeSwitch.checked = false;
+
+    const textPathList = logoIcon.contentDocument.querySelectorAll(
+      'path[fill="#223344"]',
+    );
+    textPathList.forEach((path) => {
+      path.setAttribute('fill', '#fff');
+    });
   } else {
+    // dark -> light
     headerThemeSwitch.checked = true;
     menuThemeSwitch.checked = true;
+
+    const textPathList =
+      logoIcon.contentDocument.querySelectorAll('path[fill="#fff"]');
+    textPathList.forEach((path) => {
+      path.setAttribute('fill', '#223344');
+    });
   }
 };
 
