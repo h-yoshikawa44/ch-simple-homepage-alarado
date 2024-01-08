@@ -296,7 +296,7 @@ input[type='checkbox']:checked.theme-switch__toggle
 }
 
 .hero-contents-container {
-  max-width: 500px;
+  padding: 0 3%;
   margin: 0 auto;
 }
 
@@ -310,7 +310,7 @@ input[type='checkbox']:checked.theme-switch__toggle
 .hero-contents__primary-text {
   display: block;
   margin-top: 12px;
-  font-size: 3.75rem;
+  font-size: 3rem;
   font-style: initial;
   font-weight: 700;
   color: var(--primary-text-color);
@@ -378,6 +378,17 @@ input[type='checkbox']:checked.theme-switch__toggle
   vertical-align: middle;
   content: '';
   background-image: url('../images/Done_ring_round_fill.svg');
+}
+
+@media (width > 640px) {
+  .hero-contents-container {
+    max-width: 500px;
+    padding: 0;
+  }
+
+  .hero-contents__primary-text {
+    font-size: 3.75rem;
+  }
 }
 
 @media (width > 1024px) {
