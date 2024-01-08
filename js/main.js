@@ -49,3 +49,9 @@ window.addEventListener('DOMContentLoaded', () => {
   openMenuButton.addEventListener('click', openMenu);
   closeMenuButton.addEventListener('click', closeMenu);
 });
+
+window.addEventListener('load', () => {
+  document
+    .getElementsByClassName('js-preload')[0]
+    .classList.remove('js-preload');
+});
