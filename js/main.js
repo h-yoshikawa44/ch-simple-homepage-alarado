@@ -1,4 +1,4 @@
-/* global window document */
+/* global window document HTMLInputElement */
 
 import '../css/reset.css';
 import '../css/style.css';
@@ -10,6 +10,9 @@ const menu = document.getElementById('menu');
 
 const openMenuButton = document.getElementById('open-menu-button');
 const closeMenuButton = document.getElementById('close-menu-button');
+
+const headerThemeSwitch = document.getElementById('header-theme-switch');
+const menuThemeSwitch = document.getElementById('menu-theme-switch');
 
 /**
  * メニューを開く
@@ -45,9 +48,36 @@ const closeMenu = () => {
   menu.setAttribute('aria-hidden', true);
 };
 
+/**
+ * テーマ切り替え
+ */
+const switchTheme = () => {
+  const isCurrentLight = document.body.dataset.theme === 'light';
+  document.body.dataset.theme = isCurrentLight ? 'dark' : 'light';
+
+  if (
+    !(
+      headerThemeSwitch instanceof HTMLInputElement &&
+      menuThemeSwitch instanceof HTMLInputElement
+    )
+  )
+    return;
+
+  if (isCurrentLight) {
+    headerThemeSwitch.checked = false;
+    menuThemeSwitch.checked = false;
+  } else {
+    headerThemeSwitch.checked = true;
+    menuThemeSwitch.checked = true;
+  }
+};
+
 window.addEventListener('DOMContentLoaded', () => {
   openMenuButton.addEventListener('click', openMenu);
   closeMenuButton.addEventListener('click', closeMenu);
+
+  headerThemeSwitch.addEventListener('change', switchTheme);
+  menuThemeSwitch.addEventListener('change', switchTheme);
 });
 
 window.addEventListener('load', () => {

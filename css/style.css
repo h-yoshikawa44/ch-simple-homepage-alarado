@@ -15,7 +15,7 @@
   --theme-dark-color: var(--light-black);
   --background-color: var(--white2);
   --primary-text-color: var(--black);
-  --secondary-text-color: var(--light-black);
+  --secondary-text-color: var(--gray);
   --button-bg-color: var(--blue);
   --button-text-color: var(--white);
   --link-color: var(--blue);
@@ -37,6 +37,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
+}
+
+body[data-theme='dark'] {
+  --background-color: var(--black);
+  --primary-text-color: var(--white);
+  --secondary-text-color: var(--gray);
+  --button-bg-color: var(--blue);
+  --button-text-color: var(--white);
+  --link-color: var(--blue);
+  --done-color: var(--green);
+  --menu-button-color: var(--white);
+  --menu-bg-color: var(--black);
+  --menu-text-color: var(--gray);
 }
 
 a {
@@ -174,6 +187,7 @@ input[type='checkbox']:checked.theme-switch__toggle
 
 .header__nav-list-item--selected {
   font-weight: 600;
+  color: var(--primary-text-color);
 }
 
 .header__menu-button {
@@ -308,7 +322,7 @@ input[type='checkbox']:checked.theme-switch__toggle
 .hero-contents__intro {
   font-size: 1.125rem;
   font-weight: 600;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   text-transform: uppercase;
 }
 
@@ -533,7 +547,7 @@ input[type='checkbox']:checked.theme-switch__toggle
 }
 
 .menu-contents__nav-list-item--selected {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 .menu-footer {
