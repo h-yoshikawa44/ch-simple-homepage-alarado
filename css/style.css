@@ -411,9 +411,12 @@ input[type='checkbox']:checked.theme-switch__toggle
 
 .menu {
   position: fixed;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1200;
   width: 100%;
+  max-width: 428px;
   height: 100%;
   overflow-y: auto;
   visibility: hidden;
