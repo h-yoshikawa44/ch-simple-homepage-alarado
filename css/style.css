@@ -75,7 +75,7 @@ a {
   border-radius: 16px;
 }
 
-.theme-switch__base:focus-within {
+.theme-switch__base:has(:focus-visible) {
   outline: auto;
   outline-offset: 6px;
 }
