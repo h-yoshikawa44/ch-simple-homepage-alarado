@@ -59,6 +59,8 @@
         id="open-menu-button"
         class="header__menu-button"
         type="button"
+        aria-controls="menu"
+        aria-expanded="false"
         aria-label="Open Menu"
       >
         <span class="header__menu-button-bar"> </span>
@@ -106,7 +108,7 @@
         </div>
       </div>
     </main>
-    <div id="menu" class="menu">
+    <div id="menu" class="menu" aria-hidden="true">
       <div class="menu-backdrop"></div>
       <div class="menu-contents">
         <div class="menu-header">
@@ -114,6 +116,8 @@
             id="close-menu-button"
             class="menu-header__close-button"
             type="button"
+            aria-controls="menu"
+            aria-expanded="false"
             aria-label="Close Menu"
           >
             <span class="menu-header__close-button-bar"></span>
