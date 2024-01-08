@@ -256,8 +256,8 @@ input[type='checkbox']:checked.theme-switch__toggle
 -------------------- */
 
 .main {
+  padding-bottom: 42px;
   margin-top: 12px;
-  margin-bottom: 42px;
 }
 
 .main-contents-wrapper {
@@ -267,14 +267,14 @@ input[type='checkbox']:checked.theme-switch__toggle
 
 @media (width > 1024px) {
   .main {
+    padding-bottom: 140px;
     margin-top: 64px;
-    margin-bottom: 140px;
   }
 }
 
 @media (width > 1280px) {
   .main {
-    margin-bottom: 112px;
+    padding-bottom: 112px;
   }
 
   .main-contents-wrapper {
