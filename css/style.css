@@ -15,7 +15,7 @@
   --theme-dark-color: var(--light-black);
   --background-color: var(--white2);
   --primary-text-color: var(--black);
-  --secondary-text-color: var(--gray);
+  --secondary-text-color: var(--light-black);
   --button-bg-color: var(--blue);
   --button-text-color: var(--white);
   --link-color: var(--blue);
@@ -325,7 +325,7 @@ input[type='checkbox']:checked.theme-switch__toggle
 }
 
 .hero-contents__intro {
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 600;
   color: var(--primary-text-color);
   text-transform: uppercase;
@@ -337,6 +337,7 @@ input[type='checkbox']:checked.theme-switch__toggle
   font-size: 3rem;
   font-style: initial;
   font-weight: 700;
+  line-height: 1.6;
   color: var(--primary-text-color);
 }
 
