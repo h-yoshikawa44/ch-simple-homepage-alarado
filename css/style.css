@@ -273,7 +273,7 @@ input[type='checkbox']:checked.theme-switch__toggle
 @media (width > 1024px) {
   .main {
     padding-bottom: 140px;
-    margin-top: 64px;
+    margin-top: 56px;
   }
 }
 
@@ -355,7 +355,7 @@ input[type='checkbox']:checked.theme-switch__toggle
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  width: 176px;
   padding: 12px;
   font-size: 1rem;
   font-weight: 600;
