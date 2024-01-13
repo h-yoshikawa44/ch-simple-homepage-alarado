@@ -19,16 +19,18 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body data-theme="light" class="js-preload">
     <header id="header" class="container header">
       <h1 class="header__logo-wrapper">
-        <img
-          src="./images/alarado-icon-homepage.svg"
-          alt="Alarado Logo"
+        <svg
+          id="logo-icon"
+          aria-label="Alarado Logo"
           width="141"
           height="24"
-          decoding="async"
-        />
+          viewBox="0 0 141 24"
+        >
+          <use href="./images/alarado-icon-homepage.svg#logo-svg"></use>
+        </svg>
       </h1>
       <nav id="header-nav" class="header__nav" aria-label="header-nav">
         <ul class="header__nav-list">
@@ -45,11 +47,12 @@
         for="header-theme-switch"
       >
         <input
-          class="theme-switch__toggle"
           id="header-theme-switch"
+          class="theme-switch__toggle"
           type="checkbox"
           name="theme"
           aria-label="theme switch"
+          checked
         />
         <span class="theme-switch__toggle-selected"></span>
         <span class="theme-switch__icon-base theme-switch__dark-icon"></span>
@@ -147,10 +150,11 @@
             for="menu-theme-switch"
           >
             <input
-              class="theme-switch__toggle"
               id="menu-theme-switch"
+              class="theme-switch__toggle"
               type="checkbox"
               name="theme"
+              checked
               aria-label="theme switch"
             />
             <span class="theme-switch__toggle-selected"></span>
