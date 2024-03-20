@@ -16,7 +16,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenge/33">
+    <a href="https://devchallenges.io/challenge/simple-hompage-alarado">
       Challenge
     </a>
   </h3>
@@ -84,7 +84,7 @@ Other major libraries
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenge/33) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenge/simple-hompage-alarado) was to build an application to complete the given user stories.
 
 - [x] Create a simple homepage page that matches the given design.
 - [x] Use HTML to create the basic structure.
