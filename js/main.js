@@ -60,8 +60,9 @@ const switchTheme = () => {
       headerThemeSwitch instanceof HTMLInputElement &&
       menuThemeSwitch instanceof HTMLInputElement
     )
-  )
+  ) {
     return;
+  }
 
   if (isCurrentLight) {
     // light -> dark

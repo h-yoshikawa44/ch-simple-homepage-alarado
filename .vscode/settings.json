@@ -9,5 +9,7 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "html-css-class-completion.enableEmmetSupport": true,
-  "eslint.experimental.useFlatConfig": true
+  "[markdown]": {
+    "editor.formatOnSave": false
+  }
 }
