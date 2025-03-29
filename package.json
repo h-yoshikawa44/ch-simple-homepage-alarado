@@ -42,7 +42,7 @@
     "vite": "^5.0.0"
   },
   "volta": {
-    "node": "20.9.0"
+    "node": "22.14.0"
   },
   "simple-git-hooks": {
     "pre-commit": "./node_modules/.bin/nano-staged",
