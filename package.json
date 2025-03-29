@@ -21,7 +21,7 @@
     "prepare": "lefthook install || echo 'Can not set git hooks'"
   },
   "dependencies": {
-    "wicg-inert": "^3.1.2"
+    "wicg-inert": "^3.1.3"
   },
   "devDependencies": {
     "browserslist": "^4.24.4",
