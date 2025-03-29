@@ -108,8 +108,8 @@ input[type='checkbox']:checked.theme-switch__toggle
   height: 18px;
   background-position: center;
   background-size: cover;
-  transition: 0.2s;
   transform: translateY(-50%);
+  transition: 0.2s;
 }
 
 .theme-switch__dark-icon {
@@ -182,7 +182,7 @@ input[type='checkbox']:checked.theme-switch__toggle
 }
 
 .header__nav-list-item {
-  margin-right: 32;
+  margin-right: 32px;
   font-size: 1rem;
   color: var(--secondary-text-color);
 }
@@ -452,25 +452,25 @@ input[type='checkbox']:checked.theme-switch__toggle
   right: 0;
   bottom: 0;
   z-index: 1200;
+  visibility: hidden;
   width: 100%;
   max-width: 428px;
   height: 100%;
   overflow-y: auto;
-  visibility: hidden;
   background-color: var(--menu-bg-color);
   opacity: 0;
+  transform: translateX(100%);
   transition:
     opacity 0.3s,
     visibility 0.3s ease 0.3s,
     transform 0.3s;
-  transform: translateX(100%);
 }
 
 .menu--open {
   visibility: visible;
   opacity: 1;
-  transition-delay: 0s;
   transform: translateX(0);
+  transition-delay: 0s;
 }
 
 .menu-backdrop {
@@ -523,15 +523,15 @@ input[type='checkbox']:checked.theme-switch__toggle
 .menu-header__close-button-bar::before {
   top: 50%;
   opacity: 1;
-  transition: 0.3s ease;
   transform: rotate(45deg);
+  transition: 0.3s ease;
 }
 
 .menu-header__close-button-bar::after {
   top: 50%;
   opacity: 1;
-  transition: 0.3s ease;
   transform: rotate(-45deg);
+  transition: 0.3s ease;
 }
 
 .menu-contents__nav {
