@@ -360,6 +360,7 @@ input[type='checkbox']:checked.theme-switch__toggle
   padding: 12px;
   font-size: 1rem;
   font-weight: 600;
+  line-height: 1.5;
   color: var(--button-text-color);
   text-transform: uppercase;
   background-color: var(--button-bg-color);
