@@ -18,7 +18,7 @@
     "fix:eslint": "npm run lint:eslint -- --fix",
     "fix:prettier": "npm run check:prettier -- --write",
     "deploy": "npm run build && gh-pages -d dist",
-    "prepare": "simple-git-hooks || echo 'Can not set git hooks'"
+    "prepare": "lefthook install || echo 'Can not set git hooks'"
   },
   "dependencies": {
     "wicg-inert": "^3.1.2"
@@ -27,12 +27,11 @@
     "browserslist": "^4.24.4",
     "eslint": "^9.23.0",
     "gh-pages": "^6.1.1",
+    "lefthook": "^1.11.5",
     "lightningcss": "^1.29.3",
     "markuplint": "^4.11.8",
-    "nano-staged": "^0.8.0",
     "neostandard": "^0.12.1",
     "prettier": "^3.5.3",
-    "simple-git-hooks": "^2.9.0",
     "stylelint": "^16.17.0",
     "stylelint-config-recess-order": "^6.0.0",
     "stylelint-config-standard": "^37.0.0",
@@ -41,26 +40,5 @@
   },
   "volta": {
     "node": "22.14.0"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "./node_modules/.bin/nano-staged",
-    "prepare-commit-msg": "./.githooks/prepare-commit-msg \"$@\""
-  },
-  "nano-staged": {
-    "**/*.html": [
-      "markuplint --fix --problem-only",
-      "prettier --write --loglevel=error"
-    ],
-    "css/**/*.css": [
-      "stylelint --fix --quiet",
-      "prettier --write --loglevel=error"
-    ],
-    "js/**/*.js": [
-      "prettier --write --loglevel=error",
-      "eslint --fix --quiet"
-    ],
-    "**/*.json": [
-      "prettier --write --loglevel=error"
-    ]
   }
 }
