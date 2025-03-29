@@ -143,13 +143,13 @@ input[type='checkbox']:checked.theme-switch__toggle
   overflow: hidden;
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
   .header__theme-switch {
     display: block;
   }
 }
 
-@media (width > 1280px) {
+@media (width >= 1280px) {
   .container {
     max-width: 1120px;
     margin: 0 auto;
@@ -234,7 +234,7 @@ input[type='checkbox']:checked.theme-switch__toggle
   bottom: 0;
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
   .header {
     padding: 28px 32px;
   }
@@ -252,7 +252,7 @@ input[type='checkbox']:checked.theme-switch__toggle
   }
 }
 
-@media (width > 1280px) {
+@media (width >= 1280px) {
   .header {
     padding: 28px 0;
   }
@@ -271,14 +271,14 @@ input[type='checkbox']:checked.theme-switch__toggle
   flex-direction: column;
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
   .main {
     padding-bottom: 140px;
     margin-top: 56px;
   }
 }
 
-@media (width > 1280px) {
+@media (width >= 1280px) {
   .main {
     padding-bottom: 112px;
   }
@@ -300,13 +300,13 @@ input[type='checkbox']:checked.theme-switch__toggle
   height: auto;
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
   .hero__image-wrapper {
     max-width: 576px;
   }
 }
 
-@media (width > 1280px) {
+@media (width >= 1280px) {
   .hero__image-wrapper {
     grid-row: 1;
     grid-column: 7 / 13;
@@ -406,7 +406,7 @@ input[type='checkbox']:checked.theme-switch__toggle
   background-image: url('../images/Done_ring_round_fill.svg');
 }
 
-@media (width > 640px) {
+@media (width >= 640px) {
   .hero-contents-container {
     max-width: 500px;
     padding: 0;
@@ -417,7 +417,7 @@ input[type='checkbox']:checked.theme-switch__toggle
   }
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
   .hero-contents {
     margin-top: 112px;
   }
@@ -427,7 +427,7 @@ input[type='checkbox']:checked.theme-switch__toggle
   }
 }
 
-@media (width > 1280px) {
+@media (width >= 1280px) {
   .hero-contents {
     grid-row: 1;
     grid-column: 1 / 7;
