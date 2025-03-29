@@ -25,7 +25,8 @@
   --menu-text-color: var(--gray);
 
   /* font */
-  --font-base: 'Poppins', inter, system-ui, avenir, helvetica, arial, sans-serif;
+  --font-base:
+    'Poppins', inter, system-ui, avenir, helvetica, arial, sans-serif;
 }
 
 html,
