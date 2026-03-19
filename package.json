@@ -37,5 +37,8 @@
     "stylelint-config-standard": "^40.0.0",
     "stylelint-order": "^7.0.1",
     "vite": "^8.0.1"
+  },
+  "overrides": {
+    "css-tree": "3.2.0"
   }
 }
