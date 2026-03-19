@@ -24,21 +24,21 @@
     "wicg-inert": "^3.1.3"
   },
   "devDependencies": {
-    "browserslist": "^4.24.4",
-    "eslint": "^9.23.0",
+    "browserslist": "^4.28.1",
+    "eslint": "^9.39.4",
     "gh-pages": "^6.3.0",
-    "lefthook": "^1.11.5",
-    "lightningcss": "^1.29.3",
-    "markuplint": "^4.11.8",
-    "neostandard": "^0.12.1",
-    "prettier": "^3.5.3",
-    "stylelint": "^16.17.0",
-    "stylelint-config-recess-order": "^6.0.0",
-    "stylelint-config-standard": "^37.0.0",
-    "stylelint-order": "^6.0.4",
-    "vite": "^6.2.3"
+    "lefthook": "^2.1.4",
+    "lightningcss": "^1.32.0",
+    "markuplint": "^4.14.1",
+    "neostandard": "^0.13.0",
+    "prettier": "^3.8.1",
+    "stylelint": "^17.4.0",
+    "stylelint-config-recess-order": "^7.6.1",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-order": "^7.0.1",
+    "vite": "^8.0.1"
   },
-  "volta": {
-    "node": "22.14.0"
+  "overrides": {
+    "css-tree": "3.2.0"
   }
 }
