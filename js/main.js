@@ -55,12 +55,10 @@ const switchTheme = () => {
   const isCurrentLight = document.body.dataset.theme === 'light';
   document.body.dataset.theme = isCurrentLight ? 'dark' : 'light';
 
-  if (
-    !(
-      headerThemeSwitch instanceof HTMLInputElement &&
-      menuThemeSwitch instanceof HTMLInputElement
-    )
-  ) {
+  if (!(
+    headerThemeSwitch instanceof HTMLInputElement &&
+    menuThemeSwitch instanceof HTMLInputElement
+  )) {
     return;
   }
 
